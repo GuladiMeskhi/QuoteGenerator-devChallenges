@@ -9,4 +9,4 @@ Create a quote generator app. Use Front-end libraries like React or Vue. Don’t
 -------------------------
 Challenge link : https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8
 
-View demo : https://preeminent-rugelach-c268d6.netlify.app/
+View demo : https://singular-brigadeiros-f770f8.netlify.app/
