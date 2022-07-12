@@ -1,0 +1,16 @@
+.cardContainer{
+    width:713px;
+    height:auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 8px solid rgba(247, 223, 148, 1);
+}
+
+.cardText{
+    width:614px;
+    font-size:32px;
+    max-height:301px;
+    margin:0;
+    padding:0;
+}

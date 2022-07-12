@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { RandomQuote } from './Pages/RandomQuote';
+import { BrowserRouter,
+         Routes,
+         Route } from 'react-router-dom'
+import {AuthorsQuote} from './Pages/AuthorsQuote'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<RandomQuote/>}/>
+          <Route path='/author/:authorname' element={<AuthorsQuote/>}/>
+        </Routes>
+      </BrowserRouter>
+      <span style={{fontWeight:'600',fontSize:'16px',justifySelf:'center',marginBlock:'20px'}}>Created by <a href='#'>Guladi Meskhi</a> - devChallenges.io</span>
     </div>
   );
 }
